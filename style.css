@@ -3,12 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f5f5f5;
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
   color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
 section.home {
@@ -25,9 +28,10 @@ section.home {
   max-width: 800px;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+h1, h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: 600;
 }
 
 h1 span {
@@ -452,6 +456,7 @@ section.about {
 .chatbot-card {
   max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: 20px;
   background: #0e0e0e;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -474,16 +479,222 @@ section.about {
 }
 
 .chatbot-images {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
 .chatbot-images img {
-  max-width: 300px;
+  max-width: 500px;
   width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons (if any) */
+button, .btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background: #0056b3;
+}
+
+/* Navigation styling (basic) */
+nav {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px 8px;
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn, button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: 8px 5px;
+  }
+}
+.certificates-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.certificate-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.certificate-card p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #444;
+}
+.experience-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.experience-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.experience-card {
+  background: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.experience-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.experience-content h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.experience-content .company {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.experience-content .date,
+.experience-content .location {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-card img {
+    margin-bottom: 10px;
+  }
 }
