@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Works - M M Nidhipa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About Me</a>
+        <a href="myworks.html">My Works</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#internships">Internships</a>
+      </div>
+      <div class="nav-right">
+        <span><i class="fa-solid fa-user"></i> M M Nidhipa</span>
+      </div>
+    </nav>
+  </header>
+  <!-- Title Card -->
+<div class="my-works-section">
+  <section class="myworks-hero">
+    <h1 class="glow-title">My Works</h1>
+  </section>
+
+  <!-- Project Section -->
+  <section class="project-highlight">
+    <div class="highlight-container">
+      <h2>CIPHER TIME COMPARISON USING CLASSICAL AND QUANTUM APPROACHES</h2>
+      <p>
+        This project successfully explored the implementation and performance analysis of classical cryptographic algorithms—such as Playfair, Hill, and DES—within a quantum computing environment using Qiskit. By implementing these ciphers in both classical and quantum platforms, we gained insights into their computational behaviour, execution time, and scalability.
+        <br><br>
+        The study revealed that while quantum can replicate classical encryption logic, they generally exhibit higher execution time due to overhead and complexity in circuit design. This highlights the current limitations of quantum, particularly when run on classical machines.
+      </p>
+    </div>
+    <div class="image-grid">
+  <img src="assets/images/img1.png" alt="Screenshot 1">
+  <img src="assets/images/img2.png" alt="Screenshot 2">
+  <img src="assets/images/img3.png" alt="Screenshot 3">
+  <img src="assets/images/img4.png" alt="Screenshot 4">
+</div>
+  </section>
+  
+<!-- Other Works Section -->
+<h2 class="subheading">Other Works</h2>
+
+<div class="chatbot-card">
+  <div class="chatbot-content">
+    <h3>🚀 Just Built My Own Chatbot Using Microsoft Power Virtual Agents! 🤖✨</h3>
+    <p>
+      Excited to share a recent project where I created a smart chatbot powered by Microsoft Power Virtual Agents! I integrated an Excel knowledge base containing customer order details, enabling the bot to intelligently respond to queries about their orders. Whether it’s <em>“Where’s my order?”</em> or <em>“When will it arrive?”</em> — the bot’s got it covered. But that’s not all! I connected it with Power Automate to take things a step further — now, the bot can automatically send order details to the customer’s Outlook email the moment it gets a request! 
+      This automation saves time, reduces manual errors, and enhances customer experience — a small glimpse of what low-code platforms can do! 
+    </p>
+  </div>
+
+  <div class="chatbot-images">
+    <img src="assets/images/chatbot1.png" alt="Chatbot Screenshot 1">
+    <img src="assets/images/chatbot2.png" alt="Chatbot Screenshot 2">
+    <img src="assets/images/chatbot3.png" alt="Chatbot Screenshot 3">
+  </div>
+</div>
+<div class="chatbot-card">
+  <div class="chatbot-content">
+    <h3>🎯 Power BI in Action!</h3>
+    <p>
+      Explored the visual side of data with this quick Power BI dashboard!
+ 📊 Bar & Column Charts
+ 🎯 Cards
+ 🍩 Donut Chart
+ ⏱ Gauge Chart
+ 📂 Slicers for dropdown filtering. 
+I used a sample course list from Excel, connected it to Power BI, and built an interactive report that lets users analyze data just the way they want.
+Power BI isn’t just a tool—it’s a whole vibe! ✨
+ Every click, drag, and drop taught me something new—and honestly, I enjoyed every bit of it. 
+    </p>
+  </div>
+
+  <div class="chatbot-images">
+    <img src="assets/images/powerbi1.png" alt="Chatbot Screenshot 1">
+  </div>
+</div>
+<div class="chatbot-card">
+  <div class="chatbot-content">
+    <h3>📊 Built Another Power BI Dashboard – This Time with a Twist!</h3>
+    <p>
+     ✔️ Dashboard Page:
+ • Top 10 Customers (Table)
+ • Area Graph
+ • Donut + Bar Charts
+ • Cards + Slicers
+📄 Bonus: Added a new “Details” page using Bookmarks — when a user selects a condition from the dropdown, it reveals a focused table view of that selection!
+Working with bookmarks felt like adding a secret door to my report 😄
+ Every page, every filter made learning Power BI even more fun and rewarding!
+    </p>
+  </div>
+
+  <div class="chatbot-images">
+    <img src="assets/images/powerbi2.png" alt="Chatbot Screenshot 1">
+    <img src="assets/images/powerbi3.png" alt="Chatbot Screenshot 1">
+  </div>
+</div>
+  </div>
+<script>
+  track = document.querySelector('.carousel-track');
+  nextBtn = document.querySelector('.carousel-btn.next');
+  prevBtn = document.querySelector('.carousel-btn.prev');
+  let scrollAmount = 0;
+
+  nextBtn.addEventListener('click', () => {
+    track.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
